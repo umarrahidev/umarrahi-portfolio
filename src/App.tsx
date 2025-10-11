@@ -1,20 +1,33 @@
-import React from "react";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import LandingPage from "./pages/LandingPage";
+import React from 'react';
+import Navbar from './components/Layouts/Navbar';
+import Hero from './components/Hero';
+import About from './components/About';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
+import Education from './components/Education';
+import Contact from './components/Contact';
+import Footer from './components/Layouts/Footer';
 
-const App: React.FC = () => {
+function App() {
   const scrollToSection = (sectionId: string) => {
-    document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
-    <div className="font-sans">
+    <div className="min-h-screen bg-white font-barlow">
       <Navbar scrollToSection={scrollToSection} />
-      <LandingPage scrollToSection={scrollToSection} />
+      <Hero scrollToSection={scrollToSection} />
+      <About />
+      <Experience />
+      <Projects />
+      <Education />
+      <Contact />
       <Footer />
     </div>
   );
-};
+}
 
 export default App;
