@@ -5,26 +5,27 @@ import type { Project } from "../types";
 const Projects: React.FC = () => {
   const projects: Project[] = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with authentication, product management, and payment integration.",
-      technologies: ["React", "Node.js", "MySQL", "Express", "Stripe"],
-      github: "https://github.com/umarrahi/ecommerce-platform",
-      demo: "https://ecommerce-demo.com",
+      title: "Newsynk - AI News Summarizer",
+      description:
+        "AI tool that summarizes news articles into short, intelligent insights within seconds.",
+      technologies: ["React", "Node.js", "Express", "MySQL", "Open AI"],
+      // github: "https://github.com/umarrahi/newsynk",
+      demo: "https://newsynk.healingenz.com/",
     },
-    {
-      title: "Task Management App",
-      description: "Collaborative task manager with drag-and-drop functionality and real-time updates.",
-      technologies: ["React", "Node.js", "MySQL", "Socket.io"],
-      github: "https://github.com/umarrahi/task-manager",
-      demo: "https://task-manager-demo.com",
-    },
-    {
-      title: "AI-Powered Dashboard",
-      description: "Interactive dashboard with AI model integration for data analysis and automation.",
-      technologies: ["React", "Python", "FastAPI", "Chart.js"],
-      github: "https://github.com/umarrahi/ai-dashboard",
-      demo: "https://ai-dashboard-demo.com",
-    },
+    // {
+    //   title: "Task Management App",
+    //   description: "Collaborative task manager with drag-and-drop functionality and real-time updates.",
+    //   technologies: ["React", "Node.js", "MySQL", "Socket.io"],
+    //   github: "https://github.com/umarrahi/task-manager",
+    //   demo: "https://task-manager-demo.com",
+    // },
+    // {
+    //   title: "AI-Powered Dashboard",
+    //   description: "Interactive dashboard with AI model integration for data analysis and automation.",
+    //   technologies: ["React", "Python", "FastAPI", "Chart.js"],
+    //   github: "https://github.com/umarrahi/ai-dashboard",
+    //   demo: "https://ai-dashboard-demo.com",
+    // },
   ];
 
   return (
@@ -57,7 +58,7 @@ const Projects: React.FC = () => {
                 </div>
 
                 <div className="mt-auto flex items-center gap-4">
-                  <a
+                  {/* <a
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -65,7 +66,7 @@ const Projects: React.FC = () => {
                   >
                     <Github className="w-4 h-4 mr-1" />
                     Code
-                  </a>
+                  </a> */}
                   <a
                     href={project.demo}
                     target="_blank"
@@ -73,7 +74,7 @@ const Projects: React.FC = () => {
                     className="flex items-center text-green-600 hover:text-green-800 font-medium"
                   >
                     <ExternalLink className="w-4 h-4 mr-1" />
-                    Demo
+                    Try Demo
                   </a>
                 </div>
               </div>
