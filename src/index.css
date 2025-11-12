@@ -10,3 +10,44 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* Add this to your global CSS file (index.css or tailwind.css) */
+
+/* For Webkit browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c7d2fe;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a5b4fc;
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #c7d2fe #f1f5f9;
+}
+
+/* Optional: Specific styling for chat messages area */
+.chat-messages::-webkit-scrollbar {
+  width: 4px;
+}
+
+.chat-messages::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+
+.chat-messages::-webkit-scrollbar-thumb {
+  background: #ddd6fe;
+}
