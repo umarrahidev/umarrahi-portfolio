@@ -31,7 +31,7 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSection }) => {
               <button
                 key={section}
                 onClick={() => scrollToSection(section)}
-                className="text-gray-600 hover:text-blue-600 transition-colors duration-200"
+                className="text-gray-600 hover:bg-purple-600/10 hover:text-purple-600 rounded px-2 py-1 transition-colors duration-200"
               >
                 {section.charAt(0).toUpperCase() + section.slice(1)}
               </button>
@@ -85,7 +85,7 @@ const Navbar: React.FC<NavbarProps> = ({ scrollToSection }) => {
                 <button
                   key={section}
                   onClick={() => handleMobileNavClick(section)}
-                  className="text-gray-600 hover:text-blue-600 transition-colors duration-200 text-left py-2 px-4"
+                  className="text-gray-600 hover:text-purple-600 transition-colors duration-200 text-left py-2 px-4"
                 >
                   {section.charAt(0).toUpperCase() + section.slice(1)}
                 </button>
