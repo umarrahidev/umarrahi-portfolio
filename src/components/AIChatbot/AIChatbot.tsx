@@ -1,6 +1,6 @@
 // src/components/AIChatbot/AIChatbot.tsx
 import React, { useState, useRef, useEffect } from 'react';
-import { MessageCircle, X, Send, Bot, User, BotIcon } from 'lucide-react';
+import { X, Send, Bot, User, BotIcon } from 'lucide-react';
 
 interface Message {
     id: string;
