@@ -7,7 +7,7 @@ import Projects from './components/Projects';
 import Education from './components/Education';
 import Contact from './components/Contact';
 import Footer from './components/Layouts/Footer';
-import AIChatbot from './components/AIChatbot/AIChatbot'; // Add this import
+// import AIChatbot from './components/AIChatbot/AIChatbot'; // Add this import
 
 function App() {
   const scrollToSection = (sectionId: string) => {
@@ -27,7 +27,7 @@ function App() {
       <Education />
       <Contact />
       <Footer />
-      <AIChatbot /> {/* Add this component */}
+      {/* <AIChatbot /> */}
     </div>
   );
 }
