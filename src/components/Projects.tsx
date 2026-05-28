@@ -4,14 +4,14 @@ import type { Project } from "../types";
 
 const Projects: React.FC = () => {
   const projects: Project[] = [
-    {
-      title: "Newsynk - AI News Summarizer",
-      description:
-        "AI tool that summarizes news articles into short, intelligent insights within seconds.",
-      technologies: ["React", "Node.js", "Express", "MySQL", "Open AI"],
-      // github: "https://github.com/umarrahi/newsynk",
-      demo: "https://newsynk.healingenz.com/",
-    },
+    // {
+    //   title: "Newsynk - AI News Summarizer",
+    //   description:
+    //     "AI tool that summarizes news articles into short, intelligent insights within seconds.",
+    //   technologies: ["React", "Node.js", "Express", "MySQL", "Open AI"],
+    //   // github: "https://github.com/umarrahi/newsynk",
+    //   demo: "https://newsynk.healingenz.com/",
+    // },
     // {
     //   title: "Task Management App",
     //   description: "Collaborative task manager with drag-and-drop functionality and real-time updates.",
